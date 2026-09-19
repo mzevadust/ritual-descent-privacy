@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Ritual Descent</title>
+<meta name="description" content="How the game Ritual Descent handles your data.">
+<meta name="robots" content="index, follow">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #5a5a5a;
+  --rule: #e0e0e0;
+  --accent: #6b4a8a;
+  --code-bg: #f2f2f4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16141a;
+    --text: #e8e6ea;
+    --muted: #a6a2ad;
+    --rule: #332f3a;
+    --accent: #c0a2e0;
+    --code-bg: #24212b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  padding: 48px 16px 96px;
+  max-width: 46rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
+}
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 1.5rem; }
+h2 { font-size: 1.35rem; margin: 2.75rem 0 1rem; padding-bottom: .4rem; border-bottom: 1px solid var(--rule); }
+h3 { font-size: 1.1rem; margin: 2rem 0 .75rem; color: var(--accent); }
+p, li { margin: 0 0 1rem; }
+li { margin-bottom: .5rem; }
+ul { padding-left: 1.4rem; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+code {
+  background: var(--code-bg);
+  padding: .12em .35em;
+  border-radius: 3px;
+  font-size: .9em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.5rem;
+  font-size: .94rem;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: .6rem .7rem;
+  border-bottom: 1px solid var(--rule);
+}
+th { color: var(--muted); font-weight: 600; }
+/* On a phone a two-column table with a long explanation cell cannot fit, and a
+   privacy policy is mostly read on a phone. Below this width each row becomes a
+   stacked block with its column name as a label, so nothing scrolls sideways. */
+@media (max-width: 34rem) {
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  tr {
+    margin: 0 0 1rem;
+    padding: 0 0 .25rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  td { border: 0; padding: .15rem 0; }
+  td:first-child { font-weight: 600; }
+  td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: .1rem;
+    color: var(--muted);
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+}
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy for Ritual Descent</h1>
+<p><strong>Last updated: 6 September 2026</strong></p>
+<p>Ritual Descent ("the game") is a single-player dungeon game. This policy explains what data the game collects, why, and what you can do about it.</p>
+<p>The game is playable offline and without an account. You are never asked to sign in, and you are never asked for your name, email address, or any other personal detail.</p>
+<p><strong>Who is responsible:</strong> Mzeva Dust<br>
+<strong>Contact:</strong> mzevadust@gmail.com</p>
+<hr>
+<h2>The short version</h2>
+<ul><li>No account, no sign-in, no email address.</li><li>A random ID is generated on your device so your scores can be attributed to you. It is not linked to your identity.</li><li>A display name is generated for you at random, like "AshenPilgrim417". It is not derived from anything about you.</li><li>Crash reports contain no identifier that points back to you.</li><li>Ads are served by Google. In Europe and the UK you are asked for consent first.</li><li>The game can be played without a network connection. The leaderboard and the optional rewarded ads need one.</li></ul>
+<hr>
+<h2>What the game collects</h2>
+<h3>1. Player identity and scores</h3>
+<p>When you complete a run, the game sends it to our leaderboard server so scores can be recorded and ranked.</p>
+<p>What is stored:</p>
+<table>
+<thead><tr><th>Data</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>A random player ID</td><td data-label="Why">Attributes runs to the same player across sessions. Generated on your device; it is not derived from any device identifier and is not linked to your identity.</td></tr>
+<tr><td>A display name</td><td data-label="Why">Shown on the leaderboard. Generated at random on your device, not chosen by you and not derived from any personal detail.</td></tr>
+<tr><td>A secret, stored only as a one-way hash</td><td data-label="Why">Proves a later submission comes from the same device that claimed the ID, so nobody can submit scores as you. The secret itself never leaves your device in a readable form.</td></tr>
+<tr><td>Your run results</td><td data-label="Why">Score, completion time, remaining light, times hit, whether a companion was present, floor number or daily date, and the time the run completed.</td></tr>
+<tr><td>Timestamps</td><td data-label="Why">When the player record was created and last seen.</td></tr>
+</tbody></table>
+<p><strong>Your display name is public.</strong> It is stored so it can be shown on a leaderboard alongside your scores. It is generated at random on your device and identifies nobody.</p>
+<p>When the leaderboard is switched on you will be able to change it. If you do, choose a name that is not your real name, your email address, or anything else that identifies you. Names are checked automatically, and names that are offensive or that impersonate the developer are rejected.</p>
+<p>At the time of writing, the in-game global leaderboard is not switched on, so no player sees another player's name inside the game. Scores are still collected and stored so the leaderboard is populated when it is enabled. This policy will be updated before that changes.</p>
+<p>This data is stored by <strong>Supabase</strong>, our database and server provider, acting on our behalf. Supabase's own systems log technical request information, including IP addresses, as part of operating the service. We do not store your IP address in the game's own tables and do not use it.</p>
+<h3>2. Crash and error reports</h3>
+<p>If the game crashes or hits an error, a report is sent so the bug can be fixed. This uses <strong>Firebase Crashlytics</strong>, provided by Google.</p>
+<p>A report contains the error and where in the code it happened, plus a small amount of game context: the floor you were on, the game and difficulty state, and how long the session had been running. Crashlytics also collects standard device information such as the device model, operating system version, and a Crashlytics-generated installation identifier.</p>
+<p><strong>Crash reports deliberately contain no player ID and no display name.</strong> Your leaderboard identity is not connected to crash data.</p>
+<p>Reports are stored on your device if you are offline and sent later when a connection is available.</p>
+<h3>3. Advertising</h3>
+<p>The game shows ads, provided by <strong>Google AdMob</strong>. Ads appear between runs, and you may optionally choose to watch an ad in exchange for an in-game reward.</p>
+<p>To serve ads, Google may access your device's <strong>advertising ID</strong> and related technical information. Google may use this to show personalised ads, depending on your consent and your device settings.</p>
+<p><strong>In the European Economic Area, the United Kingdom, and Switzerland</strong>, you are shown a consent form before personalised ads are used, using Google's official consent tool. You can change your choice at any time from the game's settings menu, under <strong>Privacy Options</strong>.</p>
+<p>You can also reset or delete your advertising ID at any time in your device's Android settings, under Settings → Privacy → Ads.</p>
+<p>Google's own handling of this data is described at <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</p>
+<h3>4. Data stored only on your device</h3>
+<p>Your settings, local records, progress and the identity described above are stored on your device. If you have Android Backup enabled, Android may include this in your Google account backup so a new device restores your progress. That backup is controlled by you and Google, not by us, and can be turned off in your device settings.</p>
+<hr>
+<h2>What the game does not do</h2>
+<ul><li>No advertising or analytics tracking of your behaviour in the game.</li><li>No location data.</li><li>No contacts, photos, files, microphone or camera access.</li><li>No selling of data to anyone, ever.</li><li>No sign-in, and no collection of your name or email address.</li></ul>
+<hr>
+<h2>Children</h2>
+<p>The game is not directed at young children and is not part of Google Play's Families programme. We never ask for an age or a date of birth.</p>
+<p>Ads are the one place age makes a difference, and that is handled by Google rather than by us: the ads shown depend on the age signals attached to the Google account and device, including any Family Link supervision.</p>
+<p>If you are a parent or guardian and want a child's data removed, delete it in the game under <strong>Records → My Data</strong>, or email <strong>mzevadust@gmail.com</strong> with the display name they played under.</p>
+<hr>
+<h2>Your rights and how to delete your data</h2>
+<p><strong>The reliable way: delete it from inside the game.</strong> Open <strong>Records</strong> and use <strong>Delete my data</strong>. This removes your display name and every stored run from our server, and stops anything further being uploaded, so you are opted out of the leaderboard completely. Your records on your own device are kept, and you can start uploading again later if you want to.</p>
+<p><strong>If you have already uninstalled</strong>, email <strong>mzevadust@gmail.com</strong> with the display name you played under and we will remove the record.</p>
+<p>Uninstalling the game stops all collection and removes the identity stored on your device, but it does not delete scores already sent to the server.</p>
+<p>Data is kept for as long as the leaderboard operates, or until you ask us to delete it.</p>
+<hr>
+<h2>Third parties</h2>
+<table>
+<thead><tr><th>Provider</th><th>Purpose</th><th>Their policy</th></tr></thead>
+<tbody>
+<tr><td>Supabase</td><td data-label="Purpose">Leaderboard database and server</td><td data-label="Their policy"><a href="https://supabase.com/privacy">https://supabase.com/privacy</a></td></tr>
+<tr><td>Google (AdMob)</td><td data-label="Purpose">Advertising</td><td data-label="Their policy"><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google (Firebase Crashlytics)</td><td data-label="Purpose">Crash reporting</td><td data-label="Their policy"><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Google Play</td><td data-label="Purpose">App distribution</td><td data-label="Their policy"><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+</tbody></table>
+<hr>
+<h2>Changes</h2>
+<p>If this policy changes materially, the "last updated" date above will change and, where the change is significant, the game will say so.</p>
+<h2>Contact</h2>
+<p>mzevadust@gmail.com</p>
+</main>
+<footer>Ritual Descent is made by Mzeva Dust.</footer>
+</body>
+</html>
